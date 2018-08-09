@@ -1,0 +1,18 @@
+<div class="left-container">
+    <ul>
+        {{#if logged}}
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Flights</a></li>
+        {{else}}
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+        {{/if}}
+    </ul>
+</div>
+<div class="right-container">
+    {{#if logged}}
+        <span>Welcome, {{user}}!</span>
+        <a href="#" class="log-out">Logout</a>
+    {{/if}}
+    <a href="Airline%20Administration_Условие%20(DOCX).docx" class="log-out">Description</a>
+</div>
